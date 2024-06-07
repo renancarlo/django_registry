@@ -1,0 +1,14 @@
+{% extends "dynamic/master.html" %}
+{% block title %}
+    View all members
+{% endblock %}
+
+{% block content%}
+    <p><a href="/">home</a></p>
+    <h1>All Members</h1>
+    <ul>
+    {%for mem in allmembers%}
+        <li><a href="details/{{mem.id}}">{{mem.firstname}} {{mem.lastname}}</a></li>
+    {%endfor%}
+    </ul>
+{% endblock %}    

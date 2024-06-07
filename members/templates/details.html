@@ -1,0 +1,17 @@
+{% extends "dynamic/master.html" %}
+
+{% block title%}
+    Member Details
+{% endblock%}
+{% block nav%}
+    {% include "dynamic/nav.html"%}
+{% endblock%}
+{% block content%}
+    <p><a href="/">home</a></p>
+    <h1>{{mymember.firstname}} {{mymember.lastname}}</h1>
+    <p>Phone: {{mymember.phone_num}}</p>
+    <p>Member since: {{mymember.date_inserted}}</p>
+
+    <p>Back to <a href="/members/all">Members</a></p>
+
+{% endblock %}
