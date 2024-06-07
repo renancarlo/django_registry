@@ -22,7 +22,7 @@ def register(request):
     
     if request.method == 'POST':
         form = Registration(request.POST, request.FILES)
-    
+        logger.info(form.errors)
         if form.is_valid():
             try:
                 validate_password(form.cleaned_data.get('password'))

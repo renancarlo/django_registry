@@ -18,8 +18,8 @@ class Registration(forms.ModelForm):
     
     class Meta:
         model = Member
-        fields = '__all__'
-        # fields = ['firstname', 'lastname', 'phone_num', 'user_name','password','profile']
+        # fields = '__all__'
+        fields = ['firstname', 'lastname', 'phone_num', 'user_name','password','profile']
         # widgets = {
         #     'firstname': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First name'}),
         #     'lastname': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last name'}),
