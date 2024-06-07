@@ -25,8 +25,15 @@
           <div class="col-lg-6 mb-5 mb-lg-0">
             <div class="card">
               <div class="card-body py-5 px-md-5">
-                <form method="POST">
+                <form method="POST" enctype="multipart/form-data">
                     {% csrf_token%}
+                    <div class="col-md-12 mb-4 text-center">
+                      <img src="" class="rounded" id="profile-pic" alt="Selected image">
+                    </div>
+                    <div class="col-md-12 mb-4">
+                        {{form.profile}}
+                        {{form.profile.errors}}
+                    </div>
                   <div class="row">
                     <div class="col-md-6 mb-4">
                       <div data-mdb-input-init class="form-outline">
@@ -63,6 +70,8 @@
                         {{ form.password.errors }}
                       </div>
                     </div>
+
+                    {{ form.non_form_errors }}
   
                   <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
                     Sign up

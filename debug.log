@@ -10816,3 +10816,28 @@ INFO 2024-06-07 11:30:41,807 forms phone_num
 INFO 2024-06-07 11:30:41,807 forms user_name
 INFO 2024-06-07 11:30:41,807 forms password
 INFO 2024-06-07 11:33:49,752 forms samle
+INFO 2024-06-07 16:03:00,951 views profile
+INFO 2024-06-07 16:03:20,241 views profile
+INFO 2024-06-07 16:06:58,859 views post registration
+INFO 2024-06-07 16:07:07,608 views post registration
+INFO 2024-06-07 16:08:10,725 views False
+INFO 2024-06-07 16:08:19,479 views False
+INFO 2024-06-07 16:09:41,159 views False
+INFO 2024-06-07 16:11:12,459 views False
+INFO 2024-06-07 16:11:32,225 views False
+INFO 2024-06-07 16:20:27,709 views Form valid: False
+INFO 2024-06-07 16:20:27,732 views Form errors: <ul class="errorlist"><li>profile<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
+INFO 2024-06-07 16:20:38,326 views Form valid: True
+INFO 2024-06-07 16:20:38,326 views Form errors: 
+INFO 2024-06-07 16:20:38,326 views profile: background.jpg
+INFO 2024-06-07 16:22:58,295 views Form valid: True
+INFO 2024-06-07 16:22:58,295 views Form errors: 
+INFO 2024-06-07 16:22:58,295 views profile: background.jpg
+INFO 2024-06-07 16:23:32,027 views Form valid: True
+INFO 2024-06-07 16:23:32,027 views Form errors: 
+INFO 2024-06-07 16:23:32,027 views profile: background.jpg
+INFO 2024-06-07 16:32:02,610 views profile: d506ccc4-54eb-4e40-a889-a9d646e341d2.jpg
+INFO 2024-06-07 16:34:12,286 views profile: 1101dbca-2452-4993-9f94-a1c3756f5caf.jpg
+INFO 2024-06-07 16:36:44,028 views profile: b2631b72-ff43-44c6-92e2-c08ffdef8df9.jpg
+INFO 2024-06-07 17:00:01,759 views profile: 58c6601c-6dcf-48ad-8bbb-49742134dd45.jpg
+INFO 2024-06-07 17:00:40,530 views profile: 71ed2a48-e8e5-4206-bbe8-96f9893d6013.jpg

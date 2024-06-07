@@ -11,16 +11,21 @@ class Registration(forms.ModelForm):
         widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder':'Password'}),
         validators=[validate_password]
     )
+    profile = forms.FileField(
+        required = True,
+        widget = forms.ClearableFileInput(attrs={'class': 'form-control'})   
+    )
     
     class Meta:
         model = Member
-        fields = ['firstname', 'lastname', 'phone_num', 'user_name', 'password']
-        widgets = {
-            'firstname': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First name'}),
-            'lastname': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last name'}),
-            'phone_num': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Phone number'}),
-            'user_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'User name'}),
-        }
+        fields = '__all__'
+        # fields = ['firstname', 'lastname', 'phone_num', 'user_name','password','profile']
+        # widgets = {
+        #     'firstname': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First name'}),
+        #     'lastname': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last name'}),
+        #     'phone_num': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Phone number'}),
+        #     'user_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'User name'}),
+        # }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
